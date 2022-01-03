@@ -61,6 +61,10 @@ def is_letter_correct(letter_guessed, hidden_word):
 
 
 def check_user_input(letter_guessed):
+    """
+    letter_guessed: string, letter user have guessed
+    returns: boolean, True if user's input is in the correct form, otherwise False
+    """
     if len(letter_guessed) != 1:  # check if input length is greater than 1
         print('Error. Please type only one letter at a time.')
         flag = False
